@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Front</title>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="parent-block" id="parent-block" data-child="parent-block">
+        <div class="child-block" data-child="child-block">
+            <span>1</span>
+        </div>
+    </div>
+    <div class="fun-block">
+        <div class="fun-block-item">
+            <p class="fun-block-item-name">Parent position</p>
+            <select class="js-parent-selector" data-parent="parent-block" data-style="position">
+                <option value="static">Static</option>
+                <option value="relative">Relative</option>
+                <option value="absolute">Absolute</option>
+                <option value="fixed">Fixed</option>
+            </select>
+        </div>
+        <div class="fun-block-item">
+            <p class="fun-block-item-name">Child position</p>
+            <select class="js-child-selector" data-parent="child-block" data-style="position">
+                <option value="static">Static</option>
+                <option value="relative">Relative</option>
+                <option value="absolute">Absolute</option>
+                <option value="fixed">Fixed</option>
+            </select>
+        </div>
+        <div class="fun-block-item">
+            <p class="fun-block-item-name">Parent display</p>
+            <select class="js-parent-selector" data-parent="parent-block" data-style="display">
+                <option value="block">Block</option>
+                <option value="flex">Flex</option>
+            </select>
+        </div>
+        <div class="fun-block-item">
+            <p class="fun-block-item-name">Parent flex-wrap</p>
+            <select class="js-parent-selector" data-parent="parent-block" data-style="flex-wrap">
+                <option value="no-wrap">No-wrap</option>
+                <option value="wrap">Wrap</option>
+            </select>
+        </div>
+        <div class="fun-block-item">
+            <p class="fun-block-item-name">Parent justify-content</p>
+            <select class="js-parent-selector" data-parent="parent-block" data-style="justify-content">
+                <option value="flex-start">Flex-start</option>
+                <option value="flex-end">Flex-end</option>
+                <option value="space-between">Space-between</option>
+                <option value="space-around">Space-around</option>
+                <option value="center">Center</option>
+                <option value="revert">Revert</option>
+            </select>
+        </div>
+        <div class="fun-block-item">
+            <p class="fun-block-item-name">Parent flex-direction</p>
+            <select class="js-parent-selector" data-parent="parent-block" data-style="flex-direction">
+                <option value="row">Row</option>
+                <option value="column">Column</option>
+                <option value="column-reverse">Column-reverse</option>
+                <option value="row-reverse">Row-reverse</option>
+            </select>
+        </div>
+        <div class="fun-block-item">
+            <p class="fun-block-item-name">Parent align-items</p>
+            <select class="js-parent-selector" data-parent="parent-block" data-style="align-items">
+                <option value="flex-start">Flex-start</option>
+                <option value="flex-end">Flex-end</option>
+                <option value="center">Center</option>
+            </select>
+        </div>
+        <button id="add-block">Add block</button>
+        <p class="alert">
+            Перечисленны не все возможные варианты
+        </p>
+    </div>
+</body>
+</html>
