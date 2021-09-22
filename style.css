@@ -58,3 +58,10 @@ body * {
     font-size: 16px;
     border: 1px solid black;
 }
+
+hr {
+    border: none; /* Убираем границу */
+    background-color: red; /* Цвет линии */
+    color: red; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+}
